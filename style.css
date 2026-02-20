@@ -51,7 +51,7 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(Untitled\ design\ \(5\).png) no-repeat;
+    background: url(img/Untitled\ design\ \(5\).png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -466,11 +466,10 @@ section{
 .main-text h2 span{
     color: #0ef;
 }
-.portfolio-content{
+.portfolio-content {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* allows next line */
     gap: 20px;
-    padding: 0px 15px;
 }
 .row{
     position: relative;
@@ -712,7 +711,7 @@ section{
     margin-left: 20px;
   }
   .home {
-    background: url(crop.png);
+    background: url(img/crop.png);
     background-position:bottom;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -879,4 +878,23 @@ section{
   .contact-text p {
     font-size: 14px;
   }
+}
+.code{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(196, 227, 229);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+.resume-btn {
+    display: inline-flex;
+    align-items: center; 
+    gap: 8px;             
 }
